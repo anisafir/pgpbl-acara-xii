@@ -25,7 +25,7 @@
 		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 	<script>
 		// yogyakarta
-		var map = L.map('map').setView([-7.797068, 110.370529], 13);
+		var map = L.map('map').setView([-5.842971, 110.454520], 14);
 
 		// basemap
 		var basemap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -55,7 +55,7 @@
 					});
 				},
 			});
-			$.getJSON("https://script.google.com/macros/s/AKfycbz6q5jMVO59ck2M7qaTb4HiifPotxNM3pYdLdZdKIi6GHd8PDavYfLdVAGJakfs345qXg/exec", function (data) {
+			$.getJSON("https://script.google.com/macros/s/AKfycbz65CW4ZW_yBJ_U1uTvMS_V2olH1o25DfzeoPzreAdYkT1crvD3M4zXueWC9w4ld8zgYQ/exec", function (data) {
 				point.addData(data);
 				map.addLayer(point);
 				map.fitBounds(point.getBounds());
