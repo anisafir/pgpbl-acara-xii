@@ -53,6 +53,15 @@
 								<div class="row">
 									<div class="col-sm">
 										<div class="form-group">
+											<label for="rating"><strong>Ratings</strong></label>
+											<textarea type="text" class="form-control text-primary" id="rating" name="rating"
+												placeholder="Ratings" rows="1"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm">
+										<div class="form-group">
 											<label for="foto" class="form-label">Foto</label>
 											<input class="form-group" type="file" id="foto" name="foto"
 											placeholder="Foto" rows="3">
@@ -213,7 +222,7 @@
 			.addTo(map);
 
 		// Submit to google spreadsheet
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbz65CW4ZW_yBJ_U1uTvMS_V2olH1o25DfzeoPzreAdYkT1crvD3M4zXueWC9w4ld8zgYQ/exec';
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbxt9yf07kHIYDDAOmjZTcUCFmZIMC6-DxHk5PtQV8nHH7Pf9wOpRdcYRPKknkkktRg2vw/exec';
 		const form = document.forms['submit-to-google-sheet'];
 		const btnSimpan = document.querySelector('.btn-simpan');
 		const btnLoading = document.querySelector('.btn-loading');
